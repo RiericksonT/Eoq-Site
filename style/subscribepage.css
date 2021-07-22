@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
+    linear-gradient(
+      44.13deg,
+      #00d1ff 10.06%,
+      #2fb6fd 24.45%,
+      #6697ee 39.64%,
+      #8f75cf 51.48%,
+      #a74fa2 73.61%,
+      #ac266c 86.4%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.SubscribeMain {
+  display: block;
+  align-items: center;
+}
+.SubscribeMain .SubscribeBodyLeft {
+  margin-left: 100px;
+  float: left;
+
+  display: block;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  margin-top: 20%;
+}
+.SubscribeMain .SubscribeBodyLeft > p {
+  font: 600 25px "Maven Pro", sans-serif;
+  color: #fff;
+}
+.SubscribeMain .SubscribeBodyLeft #SubscribeGoogle {
+  font: 600 10px "Maven Pro", sans-serif;
+}
+.SubscribeMain .SubscribeBodyLeft #googleLogo {
+  width: 25px;
+  height: 25px;
+}
+* body .SubscribeBodyLeft button {
+  align-self: center;
+
+  width: 100px;
+  height: 35px;
+
+  background: #ffffff;
+
+  margin-top: 25px;
+  border: transparent;
+  border-radius: 5px;
+  color: #33cef1;
+
+  cursor: pointer;
+}
+
+.SubscribeMain .divisor {
+  display: block;
+  height: 500px;
+  width: 1;
+  border-left: 3px solid;
+  float: left;
+  color: #fff;
+  margin-left: 11%;
+  margin-top: 8%;
+}
+.SubscribeMain .SubscribeBodyRight {
+  float: left;
+  margin-left: 5%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+}
+.SubscribeMain .SubscribeBodyRight p {
+  font: 600 15px "Maven Pro", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+}
+.SubscribeMain .SubscribeBodyRight form {
+  margin-top: 15px;
+}
+.SubscribeMain .SubscribeBodyRight form input {
+  margin-left: 170px;
+  width: 300px;
+  height: 65px;
+  color: #fff;
+  display: flex;
+  background-color: transparent;
+  border-style: hidden;
+  outline: 0;
+  border-bottom: solid 1px #fff;
+}
+.SubscribeMain .SubscribeBodyRight form input::after {
+  margin-left: 170px;
+  width: 300px;
+  height: 65px;
+  color: #fff;
+  display: flex;
+  background-color: transparent;
+  border-style: hidden;
+  outline: 0;
+  border-bottom: solid 1px #fff;
+}
+
+.SubscribeMain .SubscribeBodyRight form input::placeholder {
+  border-style: hidden;
+  color: #fff;
+  opacity: 1;
+}
+
+* body .SubscribeBodyRight button {
+  align-self: center;
+
+  width: 100px;
+  height: 35px;
+
+  background: #ffffff;
+
+  margin-top: 25px;
+  border: transparent;
+  border-radius: 5px;
+  color: #33cef1;
+
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 5px 5px 5px black;
+}

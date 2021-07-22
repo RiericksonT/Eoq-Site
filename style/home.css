@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
+    linear-gradient(
+      44.13deg,
+      #00d1ff 10.06%,
+      #2fb6fd 24.45%,
+      #6697ee 39.64%,
+      #8f75cf 51.48%,
+      #a74fa2 73.61%,
+      #ac266c 86.4%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .ladoEsquerdo {
+  margin-left: 150px;
+  float: left;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 180px;
+}
+* body .ladoEsquerdo img {
+  width: 150px;
+  height: 150px;
+  float: initial;
+}
+* body .ladoEsquerdo p {
+  margin-top: 45px;
+  font: 600 25px "Maven Pro", sans-serif;
+  color: #fff;
+}
+* body .linha-vertical {
+  height: 500px;
+  border-left: 3px solid;
+  float: left;
+  color: #fff;
+  margin-top: 80px;
+  margin-left: 115px;
+}
+* body .ladoDireito {
+  margin-left: 150px;
+  float: left;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 180px;
+}
+* body .ladoDireito #textoBemVindo {
+  align-self: flex-start;
+  margin-top: 2px;
+  font: 600 25px "Maven Pro", sans-serif;
+  color: #fff;
+}
+* body .ladoDireito form {
+  margin-top: 25px;
+}
+* body .ladoDireito form input {
+  width: 300px;
+  height: 65px;
+  color: #fff;
+  display: flex;
+  background-color: transparent;
+  border-style: hidden;
+  border-bottom: solid 1px #fff;
+}
+* body .ladoDireito form #textoEmail {
+  position: absolute;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 2px;
+  font: 600 10px "Maven Pro", sans-serif;
+  color: #fff;
+  transition: 0.4s;
+}
+* body .ladoDireito form #textoSenha {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 2px;
+  font: 600 10px "Maven Pro", sans-serif;
+  color: #fff;
+}
+* body .ladoDireito form input:focus {
+  outline: 0;
+  border-bottom: solid 1px #fff;
+}
+* body .ladoDireito form input:focus + #textoEmail,
+* body .ladoDireito form input:valid + #textoEmail {
+  transition: 0.9s;
+  padding: 0 10px;
+  outline: 0;
+}
+* body .ladoDireito form input:focus + #textoSenha,
+* body .ladoDireito form input:valid + #textoSenha {
+  transition: 0.9s;
+  top: 55%;
+  padding: 0 10px;
+  outline: 0;
+}
+* body .ladoDireito .separator {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+}
+* body .ladoDireito .separator::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ffffff;
+  margin-right: 16px;
+}
+* body .ladoDireito .separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ffffff;
+  margin-left: 16px;
+}
+
+* body .ladoDireito button {
+  width: 100px;
+  height: 35px;
+
+  background: #ffffff;
+
+  margin-top: 25px;
+  border: transparent;
+  border-radius: 5px;
+  color: #33cef1;
+
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 5px 5px 5px black;
+}
