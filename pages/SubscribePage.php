@@ -12,7 +12,9 @@
 
   <body>
     <div class="SubscribeMain">
-      <div id="header"></div>
+      <div id="header"> 
+        <?php require '../components/Header.php';?>
+      </div>
       <div class="SubscribeBodyLeft">
         <p>Voce esta quase la!</p>
         <hr/>
@@ -32,7 +34,9 @@
           <button>Inscreva-se</button>
         </form>
       </div>  
-      <div id="footer"></div>
+    </div>
+    <div id="footer">
+      <?php require '../components/Footer.php';?>
     </div>
   </body>
 </html>

@@ -41,7 +41,7 @@
         <hr class="divisor"/>
         <p>Nao tem login? inscreva-se agora!</p>
       </div>  
-      <button onclick="location.href='./pages/subscribepage.html'"> Inscreva-se </button>
+      <button onclick="location.href='./pages/subscribepage.php'"> Inscreva-se </button>
     </div>
   </body>
 </html>

@@ -26,7 +26,7 @@
   align-items: center;
 }
 .SubscribeMain .SubscribeBodyLeft {
-  margin-left: 100px;
+  margin-left: 150px;
   float: left;
 
   display: block;
@@ -34,7 +34,7 @@
 
   align-items: center;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 13%;
 }
 .SubscribeMain .SubscribeBodyLeft > p {
   font: 600 25px "Maven Pro", sans-serif;
@@ -65,25 +65,25 @@
 
 .SubscribeMain .divisor {
   display: block;
-  height: 500px;
+  height: 450px;
   width: 1;
   border-left: 3px solid;
   float: left;
   color: #fff;
   margin-left: 11%;
-  margin-top: 8%;
+  margin-top: 1%;
 }
 .SubscribeMain .SubscribeBodyRight {
+  font: 600 20px "Maven Pro", sans-serif;
   float: left;
   margin-left: 5%;
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .SubscribeMain .SubscribeBodyRight p {
-  font: 600 15px "Maven Pro", sans-serif;
   color: #fff;
   text-align: center;
   align-self: center;
@@ -94,7 +94,7 @@
 .SubscribeMain .SubscribeBodyRight form input {
   margin-left: 170px;
   width: 300px;
-  height: 65px;
+  height: 55px;
   color: #fff;
   display: flex;
   background-color: transparent;

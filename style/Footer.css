@@ -1,0 +1,42 @@
+footer {
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+  clear: left;
+
+  position: fixed;
+
+  height: 6%;
+  bottom: 0;
+
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+footer a {
+  position: relative;
+  left: 45%;
+  float: left;
+  display: flex;
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 1vh;
+}
+footer a img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+footer > p {
+  font: 600 8px "Maven Pro", sans-serif;
+  color: #ffffff;
+}
+
+footer > hr {
+  color: #ffffff;
+  display: flex;
+  width: 100vw;
+  border: 1px solid;
+}
