@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 * body {
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -20,27 +20,31 @@
     );
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: inline-block;
 }
 * body .HomeMenu {
+  position: relative;
   background-color: transparent;
-  width: 28%;
+  width: 23%;
   height: 100%;
   float: left;
+  margin-top: 12%;
 }
 
 * body .HomeQuestions {
   float: left;
-  margin-left: 3%;
-  margin-right: 3%;
-  background-color: pink;
-  width: 38%;
+  margin-left: 5%;
+  margin-right: 4%;
+  background-color: transparent;
+  width: 41%;
   height: 100%;
 }
 
 * body .HomeBoard {
   float: left;
-  background-color: blue;
-  width: 28%;
+  background-color: transparent;
+  width: 27%;
   height: 100%;
 }
 
@@ -49,38 +53,156 @@
   max-height: 25px;
 }
 
-button {
+* body .HomeQuestions .yourAsk {
+  width: 100%;
+  height: 180px;
+  left: 457px;
+  top: 173px;
+  display: flexbox;
+
+  background: rgba(164, 83, 166, 0.44);
+  border-radius: 8px;
+}
+
+* body .HomeQuestions .yourAsk input {
+  font: 600 20px "Maven Pro", sans-serif;
+  color: #ffffff;
+
+  width: 90%;
+  height: 115px;
+  align-self: center;
+
+  margin-top: 5%;
+  margin-left: 4%;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+
+  border: transparent;
+
+  text-align: start;
+}
+
+input:focus {
+  border: 0 none;
+  outline: 0;
+}
+
+* body .HomeQuestions .yourAsk .sendAsk {
+  margin-top: 2%;
+  margin-left: 80%;
+  margin-bottom: 5px;
+
+  height: 15%;
+  width: 80px;
+
+  cursor: pointer;
+
+  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+  border-radius: 10px;
+
+  border: transparent;
+  color: #ffffff;
+}
+
+* body .HomeQuestions .anotherAsks {
+  width: 100%;
+  height: 130px;
+
+  margin-top: 5%;
+
+  display: inline-table;
+
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+}
+
+* body .HomeQuestions .anotherAsks a {
+  text-decoration: double;
+  color: rgba(0, 0, 0, 0.27);
+  margin-left: 5%;
+  max-width: 50px;
+  max-height: 50px;
+}
+* body .HomeQuestions .anotherAsks a img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+* body .HomeQuestions .anotherAsks .askText {
+  font: 600 20px "Maven Pro", sans-serif;
+  color: #000000;
+
+  width: 90%;
+  height: 100px;
+  align-self: center;
+
+  margin-left: 4%;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+
+  border: transparent;
+
+  text-align: start;
+}
+
+* body .HomeQuestions .anotherAsks .sendReply {
+  align-self: flex-end;
+
+  margin-left: 68%;
+  margin-bottom: 5px;
+
+  height: 15%;
+  width: 80px;
+
+  cursor: pointer;
+
+  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+  border-radius: 10px;
+
+  border: transparent;
+  color: #ffffff;
+}
+
+* body .HomeBoard input {
+  width: 260px;
+  height: 45px;
+
+  background: #c4c4c4;
+  border-radius: 32px;
+
+  border: transparent;
+}
+
+* body .HomeBoard .srcButton {
+  width: 30px;
+  height: 30px;
+
+  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+  border-radius: 18px;
+
+  border: transparent;
+
+  cursor: pointer;
+}
+* body .HomeBoard .srcButton img {
+  max-width: 15px;
+  max-height: 15px;
+}
+/* CSS dos botões do menu lateral */
+
+.btn {
   background-color: transparent;
   border: 1px solid;
   border-top-color: rgba(255, 255, 255, 1);
   border-bottom-color: rgba(255, 255, 255, 1);
   border-left-color: transparent;
   border-right-color: transparent;
-}
-
-#logo {
-  max-width: 20%;
-}
-div[class*="box"] {
-  height: 25%;
-  width: 25%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-1 {
-  position: fixed;
-  background-color: black;
-  top: -2%;
-  left: 25%;
-}
-
-.btn {
   line-height: 50px;
-  height: 50px;
+  height: 60px;
   text-align: center;
-  width: 250px;
+  width: 300px;
   cursor: pointer;
 }
 .btn1 {
@@ -131,6 +253,119 @@ div[class*="box"] {
   background-color: transparent;
 }
 .btn1:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid;
+  border-top-color: rgba(255, 255, 255, 1);
+  border-bottom-color: rgba(255, 255, 255, 1);
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.btn2 {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn2 span {
+  transition: all 0.3s;
+}
+.btn2::before {
+  content: "Perfil";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 1);
+  border-bottom-color: rgba(255, 255, 255, 1);
+  transform: scale(0.1, 1);
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn2:hover span {
+  letter-spacing: 2px;
+  opacity: 0;
+}
+.btn2:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+.btn2:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+.btn3 {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn3 span {
+  transition: all 0.3s;
+}
+.btn3::before {
+  content: "Configuração";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 1);
+  border-bottom-color: rgba(255, 255, 255, 1);
+  transform: scale(0.1, 1);
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn3:hover span {
+  letter-spacing: 2px;
+  opacity: 0;
+}
+.btn3:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+.btn3:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
 }
