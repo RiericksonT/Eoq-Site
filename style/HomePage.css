@@ -6,17 +6,21 @@
 * body {
   overflow-x: hidden;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
     linear-gradient(
-      44.13deg,
-      #00d1ff 10.06%,
-      #2fb6fd 24.45%,
-      #6697ee 39.64%,
-      #8f75cf 51.48%,
-      #a74fa2 73.61%,
-      #ac266c 86.4%
+      64.08deg,
+      rgba(74, 132, 219, 0.65) 0%,
+      rgba(95, 119, 205, 0.69) 11.98%,
+      rgba(108, 93, 199, 0.65) 23.96%,
+      rgba(142, 93, 191, 0.63) 36.46%,
+      rgba(169, 90, 197, 0.72) 48.96%,
+      rgba(205, 93, 207, 0.79) 58.33%,
+      rgba(210, 86, 205, 0.72) 66.15%,
+      rgba(192, 65, 149, 0.67) 75.52%,
+      rgba(216, 90, 135, 0.76) 87.5%,
+      rgba(216, 90, 90, 0.76) 100%
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,26 +28,44 @@
   display: inline-block;
 }
 * body .HomeMenu {
-  position: relative;
-  background-color: transparent;
-  width: 23%;
-  height: 100%;
+  position: fixed;
+  left: 1%;
+  background: transparent;
+  width: 25%;
+  height: 90vh;
   float: left;
-  margin-top: 12%;
 }
 
 * body .HomeQuestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  left: 25%;
   float: left;
-  margin-left: 5%;
-  margin-right: 4%;
+
+  margin-left: 3%;
+  margin-right: 2%;
+
   background-color: transparent;
-  width: 41%;
-  height: 100%;
+
+  width: 43%;
+  min-height: 90vh;
+
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
 
 * body .HomeBoard {
+  position: fixed;
+
+  left: 75%;
+
   float: left;
+
   background-color: transparent;
+
   width: 27%;
   height: 100%;
 }
@@ -54,13 +76,12 @@
 }
 
 * body .HomeQuestions .yourAsk {
-  width: 100%;
+  width: 94%;
   height: 180px;
-  left: 457px;
-  top: 173px;
   display: flexbox;
+  align-self: center;
 
-  background: rgba(164, 83, 166, 0.44);
+  background: rgba(87, 107, 149, 0.37);
   border-radius: 8px;
 }
 
@@ -106,7 +127,8 @@ input:focus {
 }
 
 * body .HomeQuestions .anotherAsks {
-  width: 100%;
+  position: relative;
+  width: 94%;
   height: 130px;
 
   margin-top: 5%;
@@ -206,6 +228,7 @@ input:focus {
   cursor: pointer;
 }
 .btn1 {
+  margin-top: 50%;
   color: #fff;
   transition: all 0.3s;
   position: relative;

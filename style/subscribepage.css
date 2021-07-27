@@ -6,8 +6,8 @@
 * body {
   overflow: hidden;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 96vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
     linear-gradient(
       44.13deg,
@@ -26,7 +26,7 @@
   align-items: center;
 }
 .SubscribeMain .SubscribeBodyLeft {
-  margin-left: 150px;
+  margin-left: 14%;
   float: left;
 
   display: block;
@@ -40,22 +40,28 @@
   font: 600 25px "Maven Pro", sans-serif;
   color: #fff;
 }
-.SubscribeMain .SubscribeBodyLeft #SubscribeGoogle {
-  font: 600 10px "Maven Pro", sans-serif;
+.SubscribeMain .SubscribeBodyLeft .SubscribeText {
+  margin-top: 5%;
+  font: 600 15px "Maven Pro", sans-serif;
 }
 .SubscribeMain .SubscribeBodyLeft #googleLogo {
+  width: 25px;
+  height: 25px;
+}
+
+.SubscribeMain .SubscribeBodyLeft #facebookLogo {
   width: 25px;
   height: 25px;
 }
 * body .SubscribeBodyLeft button {
   align-self: center;
 
-  width: 100px;
+  width: 200px;
   height: 35px;
 
   background: #ffffff;
 
-  margin-top: 25px;
+  margin-top: 15px;
   border: transparent;
   border-radius: 5px;
   color: #33cef1;
@@ -70,13 +76,13 @@
   border-left: 3px solid;
   float: left;
   color: #fff;
-  margin-left: 11%;
+  margin-left: 18%;
   margin-top: 1%;
 }
 .SubscribeMain .SubscribeBodyRight {
   font: 600 20px "Maven Pro", sans-serif;
   float: left;
-  margin-left: 5%;
+  margin-left: 2%;
   display: block;
   justify-content: center;
   align-items: center;

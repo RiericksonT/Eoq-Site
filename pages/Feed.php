@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>E o Que?</title>
-  </head>
+   </head>
+
   <body>
     <?php
-      include "./components/indexLoggedOut.php";
+      include "../components/Header.php"; 
+      include "../components/HomePage.php";
+      include "../components/Footer.php"
     ?>
   </body>
 </html>

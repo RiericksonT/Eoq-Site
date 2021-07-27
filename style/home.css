@@ -6,8 +6,8 @@
 * body {
   overflow: hidden;
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
     linear-gradient(
       44.13deg,
@@ -46,7 +46,7 @@
   float: left;
   color: #fff;
   margin-top: 80px;
-  margin-left: 115px;
+  margin-left: 11%;
 }
 * body .ladoDireito {
   margin-left: 150px;

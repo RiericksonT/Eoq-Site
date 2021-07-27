@@ -5,10 +5,10 @@ footer {
   background-color: black;
   clear: left;
 
-  position: fixed;
+  position: absolute;
 
-  height: 6%;
-  bottom: 0;
+  height: 5%;
+  bottom: -5%;
 
   box-sizing: border-box;
   text-align: center;
