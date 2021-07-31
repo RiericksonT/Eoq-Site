@@ -19,6 +19,13 @@ $router->get("/recuperar", "Web:forget", "web.forget");
 $router->get("/senha/{email}/{forget}", "Web:reset", "web.reset");
 
 /**
+ * TERMS AND PRIVACY
+ */
+$router->group(null);
+$router->get("/termos", "Terms:terms", "terms.terms");
+$router->get("/privacidade", "Terms:privacy", "terms.privacy");
+
+/**
  * AUTH
  */
 $router->group(null);
