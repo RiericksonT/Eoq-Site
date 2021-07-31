@@ -6,15 +6,15 @@
 define("SITE", [
     "name" => "É O Que?",
     "desc" => "autenticação em MVC com php",
-    "domain" => "localhost/Eoq-Site",
+    "domain" => "eoque.dhyell.com.br",
     "locale" => "pt_BR",
-    "root" => "https://localhost/Eoq-Site"
+    "root" => "https://eoque.dhyell.com.br/dhyell/Eoq-Site"
 ]);
 
 /**
  * SITE MINIFY
  */
-if ($_SERVER["SERVER_NAME"] == "localhost/Eoq-Site") {
+if ($_SERVER["SERVER_NAME"] == SITE["domain"]) {
     require __DIR__ . "/Minify.php";
 }
 
@@ -23,7 +23,7 @@ if ($_SERVER["SERVER_NAME"] == "localhost/Eoq-Site") {
  */
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
-    "host" => "localhost/Eoq-Site",
+    "host" => SITE["domain"],
     "port" => "3306",
     "dbname" => "eoq-site",
     "username" => "root",
