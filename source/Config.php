@@ -14,7 +14,7 @@ define("SITE", [
 /**
  * SITE MINIFY
  */
-if ($_SERVER["SERVER_NAME"] == "eoque.dhyell.com.br") {
+if ($_SERVER["SERVER_NAME"] == SITE["domain"]) {
     require __DIR__ . "/Minify.php";
 }
 
@@ -23,7 +23,7 @@ if ($_SERVER["SERVER_NAME"] == "eoque.dhyell.com.br") {
  */
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
-    "host" => "eoque.dhyell.com.br",
+    "host" => SITE["domain"],
     "port" => "3306",
     "dbname" => "eoq-site",
     "username" => "root",
