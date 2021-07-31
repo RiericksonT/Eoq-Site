@@ -14,7 +14,11 @@ define("SITE", [
 /**
  * SITE MINIFY
  */
+<<<<<<< HEAD
 if ($_SERVER["SERVER_NAME"] == "localhost/Eoq-Site") {
+=======
+if ($_SERVER["SERVER_NAME"] == SITE["domain"]) {
+>>>>>>> aa7fa404988a75a731a39948a5547ab03ee3b9de
     require __DIR__ . "/Minify.php";
 }
 
@@ -23,7 +27,11 @@ if ($_SERVER["SERVER_NAME"] == "localhost/Eoq-Site") {
  */
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
+<<<<<<< HEAD
     "host" => "localhost/Eoq-Site",
+=======
+    "host" => SITE["domain"],
+>>>>>>> aa7fa404988a75a731a39948a5547ab03ee3b9de
     "port" => "3306",
     "dbname" => "eoq-site",
     "username" => "root",
