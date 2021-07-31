@@ -26,11 +26,6 @@
             <a href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Recuperar Senha</a>
             <button type="submit"> Login </button>
 
-            <div class="form_social">
-                <button onclick="location.href='<?= $router->route('auth.facebook'); ?>'" class="btn-facebook">Facebook Login</button>
-                <button onclick="location.href='<?= $router->route('auth.google'); ?>'" class="btn-google">Google Login</button>
-            </div>
-
         </form>
         <div class="separator">
             <hr class="divisor" />
