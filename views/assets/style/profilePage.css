@@ -1,159 +1,146 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 * body {
-  overflow: hidden;
-  position: relative;
-  min-width: 100%;
-  min-height: 96vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
-    linear-gradient(
-      64.08deg,
-      rgba(74, 132, 219, 0.65) 0%,
-      rgba(95, 119, 205, 0.69) 11.98%,
-      rgba(108, 93, 199, 0.65) 23.96%,
-      rgba(142, 93, 191, 0.63) 36.46%,
-      rgba(169, 90, 197, 0.72) 48.96%,
-      rgba(205, 93, 207, 0.79) 58.33%,
-      rgba(210, 86, 205, 0.72) 66.15%,
-      rgba(192, 65, 149, 0.67) 75.52%,
-      rgba(216, 90, 135, 0.76) 87.5%,
-      rgba(216, 90, 90, 0.76) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: cover;
+    overflow: hidden;
+    position: relative;
+    min-width: 100%;
+    min-height: 96vh;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  display: inline-block;
+    display: inline-block;
 }
 
 * body .halfTop {
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 * body .halfTop .userDiv {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 * body .halfTop .userDiv #avatarUser {
-  max-width: 150px;
-  min-width: 150px;
-  border-radius: 50%;
+    max-width: 150px;
+    min-width: 150px;
+    border-radius: 50%;
 }
 
 * body .halfTop span {
-  margin-top: 8px;
-  font: 600 25px "Maven Pro", sans-serif;
-  color: #fff;
+    margin-top: 8px;
+    font: 600 25px "Maven Pro", sans-serif;
+    color: #fff;
 }
 
 * body .halfTop .myReply {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  border-right: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 
-  align-items: center;
-  text-align: center;
+    align-items: center;
+    text-align: center;
 
-  margin-left: 12%;
+    margin-left: 12%;
 
-  width: 23%;
-  height: 150px;
+    width: 23%;
+    height: 150px;
 }
 
 * body .halfTop .favoriteAsk {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-  border-right: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 
-  width: 23%;
-  height: 150px;
+    width: 23%;
+    height: 150px;
 }
 
 * body .halfTop .myAsk {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  width: 23%;
-  height: 150px;
+    width: 23%;
+    height: 150px;
 }
 
 * body .halfBottom {
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 * body .halfBottom .trophy {
-  margin-left: 3%;
-  margin-top: 7%;
+    margin-left: 3%;
+    margin-top: 7%;
 
-  font: 600 25px "Maven Pro", sans-serif;
-  color: #fff;
+    font: 600 25px "Maven Pro", sans-serif;
+    color: #fff;
 
-  background-color: rgba(255, 255, 255, 0.36);
+    background-color: rgba(255, 255, 255, 0.36);
 
-  width: 25%;
-  min-height: 20vh;
-  max-height: 20vh;
+    width: 25%;
+    min-height: 20vh;
+    max-height: 20vh;
 
-  text-align: center;
+    text-align: center;
 }
 
 * body .halfBottom .aboutMe {
-  margin-left: 16%;
-  margin-top: 7%;
+    margin-left: 16%;
+    margin-top: 7%;
 
-  font: 600 25px "Maven Pro", sans-serif;
-  color: #fff;
+    font: 600 25px "Maven Pro", sans-serif;
+    color: #fff;
 
-  background-color: rgba(255, 255, 255, 0.36);
+    background-color: rgba(255, 255, 255, 0.36);
 
-  width: 50%;
-  min-height: 30vh;
-  max-height: 30vh;
+    width: 50%;
+    min-height: 30vh;
+    max-height: 30vh;
 
-  text-align: center;
+    text-align: center;
 }
 
 * body .halfBottom button {
-  margin-left: 3%;
-  margin-top: 20%;
+    margin-left: 3%;
+    margin-top: 20%;
 
-  max-width: 25px;
-  max-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 
-  border: 0;
+    border: 0;
 
-  background: transparent;
+    background: transparent;
 
-  cursor: pointer;
+    cursor: pointer;
 }
 * body .halfBottom img {
-  max-width: 30px;
-  max-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 /* Propriedades das imagens */
 
 * body .halfTop #myReplyft {
-  max-width: 100px;
+    max-width: 100px;
 }
 * body .halfTop #myAskft {
-  max-width: 100px;
+    max-width: 100px;
 }
 * body .halfTop #favoriteAskft {
-  max-width: 100px;
+    max-width: 100px;
 }

@@ -4,16 +4,27 @@
 <div class="main_content_box">
 
     <div class="ladoEsquerdo">
-        <img src="<?= imagePath("logo.png") ?>" alt="Logo" />
+        <img src="<?= imagePath("background.png") ?>" alt="Logo" />
         <p>Bem Vindo(a) ao “É o que?”!<br />
-            um site feito para você sanar<br />
+            um site feito para você sanar
             todas as suas duvidas!</p>
     </div>
     <div class="linha-vertical"> </div>
     <div class="ladoDireito">
+        <p id="textoBemVindo">
+            <img src="<?= imagePath("logoIcon.ico") ?>" alt="Logo" />
+            Welcome!
+        </p>
+        <p id="textoLogin">Faca seu login com:</p>
+        <div class="form_social">
+            <button onclick="location.href='<?= $router->route('auth.facebook'); ?>'" class="btn-facebook"><img src="<?= imagePath("facebookLogo.png") ?>" alt=""></button>
+            <button onclick="location.href='<?= $router->route('auth.google'); ?>'" class="btn-google"><img src="<?= imagePath("googleLogo.png") ?>" alt=""></button>
+        </div>
+        <div class="separator">
+            <hr class="divisor" />
+            <p>OU</p>
+        </div>
         <form class="form" action="<?= $router->route("auth.login"); ?>" method="post" autocomplete="off">
-
-            <p id="textoBemVindo">Hello, Welcome!</p>
 
             <div class="login_form_callback">
                 <?= flash(); ?>
@@ -25,11 +36,6 @@
             <p id="textoSenha">senha</p>
             <a href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Recuperar Senha</a>
             <button type="submit"> Login </button>
-
-            <div class="form_social">
-                <button onclick="location.href='<?= $router->route('auth.facebook'); ?>'" class="btn-facebook">Facebook Login</button>
-                <button onclick="location.href='<?= $router->route('auth.google'); ?>'" class="btn-google">Google Login</button>
-            </div>
 
         </form>
         <div class="separator">

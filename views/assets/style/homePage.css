@@ -1,394 +1,381 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 * body {
-  overflow-x: hidden;
-  position: relative;
-  min-width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
-    linear-gradient(
-      64.08deg,
-      rgba(74, 132, 219, 0.65) 0%,
-      rgba(95, 119, 205, 0.69) 11.98%,
-      rgba(108, 93, 199, 0.65) 23.96%,
-      rgba(142, 93, 191, 0.63) 36.46%,
-      rgba(169, 90, 197, 0.72) 48.96%,
-      rgba(205, 93, 207, 0.79) 58.33%,
-      rgba(210, 86, 205, 0.72) 66.15%,
-      rgba(192, 65, 149, 0.67) 75.52%,
-      rgba(216, 90, 135, 0.76) 87.5%,
-      rgba(216, 90, 90, 0.76) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  display: inline-block;
+    display: inline-block;
 }
 * body .HomeMenu {
-  position: fixed;
-  left: 1%;
-  background: transparent;
-  width: 25%;
-  height: 90vh;
-  float: left;
+    position: fixed;
+    left: 1%;
+    background: transparent;
+    width: 25%;
+    height: 90vh;
+    float: left;
 }
 
 * body .HomeQuestions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  position: relative;
-  left: 25%;
-  float: left;
+    position: relative;
+    left: 25%;
+    float: left;
 
-  margin-left: 3%;
-  margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
 
-  background-color: transparent;
+    background-color: transparent;
 
-  width: 43%;
-  min-height: 90vh;
+    width: 43%;
+    min-height: 90vh;
 
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 * body .HomeBoard {
-  position: fixed;
+    position: fixed;
 
-  left: 75%;
+    left: 75%;
 
-  float: left;
+    float: left;
 
-  background-color: transparent;
+    background-color: transparent;
 
-  width: 27%;
-  height: 100%;
+    width: 27%;
+    height: 100%;
 }
 
 * body .HomeMenu button span img {
-  max-width: 25px;
-  max-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 * body .HomeQuestions .yourAsk {
-  width: 94%;
-  height: 180px;
-  display: flexbox;
-  align-self: center;
+    width: 94%;
+    height: 180px;
+    display: flexbox;
+    align-self: center;
 
-  background: rgba(87, 107, 149, 0.37);
-  border-radius: 8px;
+    background: rgba(87, 107, 149, 0.37);
+    border-radius: 8px;
 }
 
 * body .HomeQuestions .yourAsk input {
-  font: 600 20px "Maven Pro", sans-serif;
-  color: #ffffff;
+    font: 600 20px "Maven Pro", sans-serif;
+    color: #ffffff;
 
-  width: 90%;
-  height: 115px;
-  align-self: center;
+    width: 90%;
+    height: 115px;
+    align-self: center;
 
-  margin-top: 5%;
-  margin-left: 4%;
+    margin-top: 5%;
+    margin-left: 4%;
 
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
 
-  border: transparent;
+    border: transparent;
 
-  text-align: start;
+    text-align: start;
 }
 
 input:focus {
-  border: 0 none;
-  outline: 0;
+    border: 0 none;
+    outline: 0;
 }
 
 * body .HomeQuestions .yourAsk .sendAsk {
-  margin-top: 2%;
-  margin-left: 80%;
-  margin-bottom: 5px;
+    margin-top: 2%;
+    margin-left: 80%;
+    margin-bottom: 5px;
 
-  height: 15%;
-  width: 80px;
+    height: 15%;
+    width: 80px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
-  border-radius: 10px;
+    background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+    border-radius: 10px;
 
-  border: transparent;
-  color: #ffffff;
+    border: transparent;
+    color: #ffffff;
 }
 
 * body .HomeQuestions .anotherAsks {
-  position: relative;
-  width: 94%;
-  height: 130px;
+    position: relative;
+    width: 94%;
+    height: 130px;
 
-  margin-top: 5%;
+    margin-top: 5%;
 
-  display: inline-table;
+    display: inline-table;
 
-  background: rgba(196, 196, 196, 0.5);
-  border-radius: 8px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
 }
 
 * body .HomeQuestions .anotherAsks a {
-  text-decoration: double;
-  color: rgba(0, 0, 0, 0.27);
-  margin-left: 5%;
-  max-width: 50px;
-  max-height: 50px;
+    text-decoration: double;
+    color: rgba(0, 0, 0, 0.27);
+    margin-left: 5%;
+    max-width: 50px;
+    max-height: 50px;
 }
 * body .HomeQuestions .anotherAsks a img {
-  max-width: 25px;
-  max-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 * body .HomeQuestions .anotherAsks .askText {
-  font: 600 20px "Maven Pro", sans-serif;
-  color: #000000;
+    font: 600 20px "Maven Pro", sans-serif;
+    color: #000000;
 
-  width: 90%;
-  height: 100px;
-  align-self: center;
+    width: 90%;
+    height: 100px;
+    align-self: center;
 
-  margin-left: 4%;
+    margin-left: 4%;
 
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
 
-  border: transparent;
+    border: transparent;
 
-  text-align: start;
+    text-align: start;
 }
 
 * body .HomeQuestions .anotherAsks .sendReply {
-  align-self: flex-end;
+    align-self: flex-end;
 
-  margin-left: 68%;
-  margin-bottom: 5px;
+    margin-left: 68%;
+    margin-bottom: 5px;
 
-  height: 15%;
-  width: 80px;
+    height: 15%;
+    width: 80px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
-  border-radius: 10px;
+    background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+    border-radius: 10px;
 
-  border: transparent;
-  color: #ffffff;
+    border: transparent;
+    color: #ffffff;
 }
 
 * body .HomeBoard input {
-  width: 260px;
-  height: 45px;
+    width: 260px;
+    height: 45px;
 
-  background: #c4c4c4;
-  border-radius: 32px;
+    background: #c4c4c4;
+    border-radius: 32px;
 
-  border: transparent;
+    border: transparent;
 }
 
 * body .HomeBoard .srcButton {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
-  border-radius: 18px;
+    background: linear-gradient(180deg, #33cef1 0%, #0667b2 100%);
+    border-radius: 18px;
 
-  border: transparent;
+    border: transparent;
 
-  cursor: pointer;
+    cursor: pointer;
 }
 * body .HomeBoard .srcButton img {
-  max-width: 15px;
-  max-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
 }
 /* CSS dos botões do menu lateral */
 
 .btn {
-  background-color: transparent;
-  border: 1px solid;
-  border-top-color: rgba(255, 255, 255, 1);
-  border-bottom-color: rgba(255, 255, 255, 1);
-  border-left-color: transparent;
-  border-right-color: transparent;
-  line-height: 50px;
-  height: 60px;
-  text-align: center;
-  width: 300px;
-  cursor: pointer;
+    background-color: transparent;
+    border: 1px solid;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    line-height: 50px;
+    height: 60px;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
 }
 .btn1 {
-  margin-top: 50%;
-  color: #fff;
-  transition: all 0.3s;
-  position: relative;
+    margin-top: 50%;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
 }
 .btn1 span {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 .btn1::before {
-  content: "Pagina inicial";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255, 255, 255, 1);
-  border-bottom-color: rgba(255, 255, 255, 1);
-  transform: scale(0.1, 1);
-  background-color: transparent;
-  color: #ffffff;
+    content: "Pagina inicial";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    transform: scale(0.1, 1);
+    background-color: transparent;
+    color: #ffffff;
 }
 .btn1:hover span {
-  letter-spacing: 2px;
-  opacity: 0;
+    letter-spacing: 2px;
+    opacity: 0;
 }
 .btn1:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
+    opacity: 1;
+    transform: scale(1, 1);
 }
 .btn1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: transparent;
 }
 .btn1:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
+    opacity: 0;
+    transform: scale(0.1, 1);
 }
 
 button {
-  background-color: transparent;
-  border: 1px solid;
-  border-top-color: rgba(255, 255, 255, 1);
-  border-bottom-color: rgba(255, 255, 255, 1);
-  border-left-color: transparent;
-  border-right-color: transparent;
+    background-color: transparent;
+    border: 1px solid;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 .btn2 {
-  color: #fff;
-  transition: all 0.3s;
-  position: relative;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
 }
 .btn2 span {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 .btn2::before {
-  content: "Perfil";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255, 255, 255, 1);
-  border-bottom-color: rgba(255, 255, 255, 1);
-  transform: scale(0.1, 1);
-  background-color: transparent;
-  color: #ffffff;
+    content: "Perfil";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    transform: scale(0.1, 1);
+    background-color: transparent;
+    color: #ffffff;
 }
 .btn2:hover span {
-  letter-spacing: 2px;
-  opacity: 0;
+    letter-spacing: 2px;
+    opacity: 0;
 }
 .btn2:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
+    opacity: 1;
+    transform: scale(1, 1);
 }
 .btn3::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: transparent;
 }
 .btn2:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
+    opacity: 0;
+    transform: scale(0.1, 1);
 }
 
 .btn3 {
-  color: #fff;
-  transition: all 0.3s;
-  position: relative;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
 }
 .btn3 span {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 .btn3::before {
-  content: "Configuração";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255, 255, 255, 1);
-  border-bottom-color: rgba(255, 255, 255, 1);
-  transform: scale(0.1, 1);
-  background-color: transparent;
-  color: #ffffff;
+    content: "Configuração";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    transform: scale(0.1, 1);
+    background-color: transparent;
+    color: #ffffff;
 }
 .btn3:hover span {
-  letter-spacing: 2px;
-  opacity: 0;
+    letter-spacing: 2px;
+    opacity: 0;
 }
 .btn3:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
+    opacity: 1;
+    transform: scale(1, 1);
 }
 .btn3::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: transparent;
 }
 .btn3:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
+    opacity: 0;
+    transform: scale(0.1, 1);
 }

@@ -9,7 +9,7 @@
     <?php $this->unshift("head") ?>
 
     <link rel="stylesheet" href="<?= asset("/style.min.css"); ?>" />
-    <link rel="icon" type="image/png" href="<?= asset("/images/favicon.png"); ?>" />
+    <link rel="icon" type="image/png" href="<?= asset("/images/logoIcon.ico"); ?>" />
 </head>
 
 <body>

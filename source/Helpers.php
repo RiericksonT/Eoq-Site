@@ -23,7 +23,7 @@ function site(string $param = null): string
  */
 function routeImage(string $imageUrl): string
 {
-    return "https://via.placeholder.com/1200x628/0984e3/FFFFFF?text={$imageUrl}";
+    return "https://www.freepnglogos.com/pics/red-logo-png";
 }
 
 /**
@@ -79,7 +79,7 @@ function flash(string $type = null, string $message = null): ?string
 
     if (!empty($_SESSION["flash"]) && $flash = $_SESSION["flash"]) {
         unset($_SESSION["flash"]);
-        return "<div class=\"message {$flash["type"]}\">{$flash["message"]}</div>";
+        return "<div class=\"message{$flash["type"]}\">{$flash["message"]}</div>";
     }
 
     return null;
