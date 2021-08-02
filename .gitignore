@@ -1,2 +1,2 @@
 $ cat .gitignore
-Config.php
+sources/Support/Config.php
