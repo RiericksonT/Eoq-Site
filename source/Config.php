@@ -6,9 +6,9 @@
 define("SITE", [
     "name" => "É O Que?",
     "desc" => "autenticação em MVC com php",
-    "domain" => "localhost/Eoq-Site",
+    "domain" => "eoque.dhyell.com.br",
     "locale" => "pt_BR",
-    "root" => "https://localhost/Eoq-Site"
+    "root" => "https://eoque.dhyell.com.br/dhyell/Eoq-Site"
 ]);
 
 /**

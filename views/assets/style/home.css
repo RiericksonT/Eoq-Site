@@ -1,4 +1,4 @@
-* body .ladoEsquerdo {
+body .ladoEsquerdo {
     margin-left: 150px;
     float: left;
     display: inline-block;
@@ -7,15 +7,15 @@
     text-align: center;
     margin-top: 5%;
 }
-* body .ladoEsquerdo img {
+body .ladoEsquerdo img {
     max-width: 400px;
 }
-* body .ladoEsquerdo p {
+body .ladoEsquerdo p {
     margin-top: 1%;
     font: 600 20px "Maven Pro", sans-serif;
     color: #ffffff;
 }
-* body .linha-vertical {
+body .linha-vertical {
     height: 100vh;
     border-left: 3px solid;
     float: left;
@@ -23,7 +23,7 @@
 
     margin-left: 11%;
 }
-* body .ladoDireito {
+body .ladoDireito {
     margin-left: 8%;
     margin-top: 3%;
 
@@ -36,29 +36,29 @@
 
     align-self: center;
 }
-* body .ladoDireito .form_social img {
+body .ladoDireito .form_social img {
     max-width: 25px;
 }
-* body .ladoDireito #textoBemVindo {
+body .ladoDireito #textoBemVindo {
     align-self: flex-start;
     margin-top: 2px;
     font: 600 25px "Maven Pro", sans-serif;
     color: #fff;
 }
-* body .ladoDireito #textoLogin {
+body .ladoDireito #textoLogin {
     align-self: flex-start;
     margin-top: 15%;
     font: 600 15px "Maven Pro", sans-serif;
     color: #fff;
 }
-* body .ladoDireito .form a {
+body .ladoDireito .form a {
     color: white;
     font-size: 10px;
 
     display: flex;
     margin-left: 78%;
 }
-* body .ladoDireito .form input {
+body .ladoDireito .form input {
     width: 350px;
     height: 65px;
     color: #fff;
@@ -70,7 +70,7 @@
 .message {
     color: red;
 }
-* body .ladoDireito form #textoEmail {
+body .ladoDireito form #textoEmail {
     position: absolute;
     display: flex;
     align-self: flex-start;
@@ -79,52 +79,52 @@
     color: #fff;
     transition: 0.4s;
 }
-* body .ladoDireito form #textoSenha {
+body .ladoDireito form #textoSenha {
     display: flex;
     align-self: flex-start;
     margin-top: 2px;
     font: 600 10px "Maven Pro", sans-serif;
     color: #fff;
 }
-* body .ladoDireito form input:focus {
+body .ladoDireito form input:focus {
     outline: 0;
     border-bottom: solid 1px #fff;
 }
-* body .ladoDireito form input:focus + #textoEmail,
-* body .ladoDireito form input:valid + #textoEmail {
+body .ladoDireito form input:focus + #textoEmail,
+body .ladoDireito form input:valid + #textoEmail {
     transition: 0.9s;
     padding: 0 10px;
     outline: 0;
 }
-* body .ladoDireito form input:focus + #textoSenha,
-* body .ladoDireito form input:valid + #textoSenha {
+body .ladoDireito form input:focus + #textoSenha,
+body .ladoDireito form input:valid + #textoSenha {
     transition: 0.9s;
     top: 55%;
     padding: 0 10px;
     outline: 0;
 }
-* body .ladoDireito .separator {
+body .ladoDireito .separator {
     font-size: 14px;
     color: #fff;
     margin: 32px 0 25px;
     display: flex;
     align-items: center;
 }
-* body .ladoDireito .separator::before {
+body .ladoDireito .separator::before {
     content: "";
     flex: 1;
     height: 1px;
     background-color: #fff;
     margin-right: 16px;
 }
-* body .ladoDireito .separator::after {
+body .ladoDireito .separator::after {
     content: "";
     flex: 1;
     height: 1px;
     background-color: #fff;
     margin-left: 16px;
 }
-* body .ladoDireito button {
+body .ladoDireito button {
     width: 100px;
     height: 35px;
     background: #fff;

@@ -1,46 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-* body {
-    overflow: hidden;
-    position: relative;
-    min-width: 100%;
-    min-height: 96vh;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    display: inline-block;
-}
-
-* body .halfTop {
+body .halfTop {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
 }
 
-* body .halfTop .userDiv {
+body .halfTop .userDiv {
     margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-* body .halfTop .userDiv #avatarUser {
+body .halfTop .userDiv #avatarUser {
     max-width: 150px;
     min-width: 150px;
     border-radius: 50%;
 }
 
-* body .halfTop span {
+body .halfTop span {
     margin-top: 8px;
     font: 600 25px "Maven Pro", sans-serif;
     color: #fff;
 }
 
-* body .halfTop .myReply {
+body .halfTop .myReply {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +40,7 @@
     height: 150px;
 }
 
-* body .halfTop .favoriteAsk {
+body .halfTop .favoriteAsk {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +52,7 @@
     height: 150px;
 }
 
-* body .halfTop .myAsk {
+body .halfTop .myAsk {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,13 +61,13 @@
     height: 150px;
 }
 
-* body .halfBottom {
+body .halfBottom {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
 }
 
-* body .halfBottom .trophy {
+body .halfBottom .trophy {
     margin-left: 3%;
     margin-top: 7%;
 
@@ -99,7 +83,7 @@
     text-align: center;
 }
 
-* body .halfBottom .aboutMe {
+body .halfBottom .aboutMe {
     margin-left: 16%;
     margin-top: 7%;
 
@@ -115,7 +99,7 @@
     text-align: center;
 }
 
-* body .halfBottom button {
+body .halfBottom button {
     margin-left: 3%;
     margin-top: 20%;
 
@@ -128,19 +112,19 @@
 
     cursor: pointer;
 }
-* body .halfBottom img {
+body .halfBottom img {
     max-width: 30px;
     max-height: 30px;
 }
 
 /* Propriedades das imagens */
 
-* body .halfTop #myReplyft {
+body .halfTop #myReplyft {
     max-width: 100px;
 }
-* body .halfTop #myAskft {
+body .halfTop #myAskft {
     max-width: 100px;
 }
-* body .halfTop #favoriteAskft {
+body .halfTop #favoriteAskft {
     max-width: 100px;
 }

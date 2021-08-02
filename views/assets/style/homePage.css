@@ -1,20 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-* body {
-    overflow-x: hidden;
-    position: relative;
-    min-width: 100%;
-    min-height: 100vh;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    display: inline-block;
-}
-* body .HomeMenu {
+body .HomeMenu {
     position: fixed;
     left: 1%;
     background: transparent;
@@ -23,7 +8,7 @@
     float: left;
 }
 
-* body .HomeQuestions {
+body .HomeQuestions {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +29,7 @@
     border-right: 1px solid #ffffff;
 }
 
-* body .HomeBoard {
+body .HomeBoard {
     position: fixed;
 
     left: 75%;
@@ -57,12 +42,12 @@
     height: 100%;
 }
 
-* body .HomeMenu button span img {
+body .HomeMenu button span img {
     max-width: 25px;
     max-height: 25px;
 }
 
-* body .HomeQuestions .yourAsk {
+body .HomeQuestions .yourAsk {
     width: 94%;
     height: 180px;
     display: flexbox;
@@ -72,7 +57,7 @@
     border-radius: 8px;
 }
 
-* body .HomeQuestions .yourAsk input {
+body .HomeQuestions .yourAsk input {
     font: 600 20px "Maven Pro", sans-serif;
     color: #ffffff;
 
@@ -96,7 +81,7 @@ input:focus {
     outline: 0;
 }
 
-* body .HomeQuestions .yourAsk .sendAsk {
+body .HomeQuestions .yourAsk .sendAsk {
     margin-top: 2%;
     margin-left: 80%;
     margin-bottom: 5px;
@@ -113,7 +98,7 @@ input:focus {
     color: #ffffff;
 }
 
-* body .HomeQuestions .anotherAsks {
+body .HomeQuestions .anotherAsks {
     position: relative;
     width: 94%;
     height: 130px;
@@ -126,19 +111,19 @@ input:focus {
     border-radius: 8px;
 }
 
-* body .HomeQuestions .anotherAsks a {
+body .HomeQuestions .anotherAsks a {
     text-decoration: double;
     color: rgba(0, 0, 0, 0.27);
     margin-left: 5%;
     max-width: 50px;
     max-height: 50px;
 }
-* body .HomeQuestions .anotherAsks a img {
+body .HomeQuestions .anotherAsks a img {
     max-width: 25px;
     max-height: 25px;
 }
 
-* body .HomeQuestions .anotherAsks .askText {
+body .HomeQuestions .anotherAsks .askText {
     font: 600 20px "Maven Pro", sans-serif;
     color: #000000;
 
@@ -156,7 +141,7 @@ input:focus {
     text-align: start;
 }
 
-* body .HomeQuestions .anotherAsks .sendReply {
+body .HomeQuestions .anotherAsks .sendReply {
     align-self: flex-end;
 
     margin-left: 68%;
@@ -174,7 +159,7 @@ input:focus {
     color: #ffffff;
 }
 
-* body .HomeBoard input {
+body .HomeBoard input {
     width: 260px;
     height: 45px;
 
@@ -184,7 +169,7 @@ input:focus {
     border: transparent;
 }
 
-* body .HomeBoard .srcButton {
+body .HomeBoard .srcButton {
     width: 30px;
     height: 30px;
 
@@ -195,7 +180,7 @@ input:focus {
 
     cursor: pointer;
 }
-* body .HomeBoard .srcButton img {
+body .HomeBoard .srcButton img {
     max-width: 15px;
     max-height: 15px;
 }

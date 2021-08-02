@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* body {
+    overflow: hidden;
+    position: relative;
+    min-width: 100%;
+    min-height: 96vh;
+    background-color: #393737;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+}

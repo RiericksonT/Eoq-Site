@@ -1,17 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-* body {
-    overflow: hidden;
-    position: relative;
-    min-width: 100%;
-    min-height: 96vh;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .SubscribeMain {
     display: block;
     align-items: center;
@@ -44,7 +30,7 @@
     width: 25px;
     height: 25px;
 }
-* body .SubscribeBodyLeft button {
+body .SubscribeBodyLeft button {
     align-self: center;
 
     width: 200px;
@@ -117,7 +103,7 @@
     opacity: 1;
 }
 
-* body .SubscribeBodyRight button {
+body .SubscribeBodyRight button {
     align-self: center;
 
     width: 100px;
