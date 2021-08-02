@@ -1,0 +1,76 @@
+@media (min-width: 860px) {
+    #page {
+        display: grid;
+        width: 100%;
+        max-width: 1110px;
+        grid-gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        grid-template-columns: 160px 1fr 312px;
+        grid-template-areas:
+            "profile feed relations"
+            "profile feed relations"
+            "profile feed relations";
+    }
+    #page > #profile {
+        display: grid;
+        padding: 16px;
+        border-radius: 8px;
+        grid-area: profile;
+        height: 100%;
+        background-color: #8ca0ff;
+    }
+
+    #page > #profile > #photo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #photo > img{
+        border-radius: 8px;
+    }
+}
+
+@media(max-width: 860px) {
+    #page {
+        display: grid;
+        width: 100%;
+        max-width: 500px;
+        grid-gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "profile profile"
+            "feed feed"
+            "relations relations";
+    }
+    #page > #profile {
+        display: grid;
+        padding: 16px;
+        border-radius: 8px;
+        grid-area: profile;
+        height: 100%;
+        background-color: #8ca0ff;
+    }
+
+    #page > #profile > #photo{
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+}
+
+#page > #feed {
+    border-radius: 8px;
+    grid-area: feed;
+    background-color: #ffa08c;
+}
+
+#page > #relations {
+    border-radius: 8px;
+    grid-area: relations;
+    background-color: #ffff64;
+}
