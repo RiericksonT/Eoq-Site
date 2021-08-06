@@ -1,42 +1,40 @@
 footer {
-  margin: 0;
-  padding: 0;
-
-  background-color: black;
-  clear: left;
-
-  position: absolute;
-
-  height: 5%;
-  bottom: -5%;
-
-  box-sizing: border-box;
-  text-align: center;
-  align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    clear: left;
+    position: absolute;
+    height: 5%;
+    bottom: -5%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a {
-  position: relative;
-  left: 45%;
-  float: left;
-  display: flex;
-  max-width: 25px;
-  max-height: 25px;
-  margin-right: 1vh;
+    position: relative;
+    left: 45%;
+    float: left;
+    display: flex;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 1vh;
 }
 footer a img {
-  max-width: 30px;
-  max-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 footer > p {
-  font: 600 8px "Maven Pro", sans-serif;
-  color: #ffffff;
+    font: 600 8px "Maven Pro", sans-serif;
+    color: #ffffff;
 }
 
 footer > hr {
-  color: #ffffff;
-  display: flex;
-  width: 100vw;
-  border: 1px solid;
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    border: 1px solid;
 }

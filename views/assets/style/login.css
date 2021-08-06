@@ -1,0 +1,228 @@
+@media (min-width: 861px) {
+    #pageLogin {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        max-width: 1110px;
+        grid-gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        grid-template-columns: 1fr 10px 1fr;
+        grid-template-areas:
+            "ladoEsquerdo separador ladoDireito"
+            "ladoEsquerdo separador ladoDireito"
+            "ladoEsquerdo separador ladoDireito";
+    }
+
+    #pageLogin > #separador{
+        grid-area: separador;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pageLogin > #separador > #separador_horizontal{
+        display: block;
+    }
+
+    .linha-vertical {
+        height: 95vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 3px solid;
+        float: left;
+        color: #ffff;
+        margin-left: 11%;
+    }
+}
+
+@media(max-width: 860px) {
+    #pageLogin {
+        display: grid;
+        width: 100%;
+        max-width: 500px;
+        grid-gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "ladoEsquerdo ladoEsquerdo"
+            "separador separador"
+            "ladoDireito ladoDireito";
+    }
+    #pageLogin > #separador{
+        grid-area: separador;
+        display: grid;
+    }
+
+    .linha-vertical {
+        display: block;
+    }
+}
+
+#pageLogin > #ladoEsquerdo {
+    grid-area: ladoEsquerdo;
+    display: grid;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoEsquerdo > img {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoEsquerdo > p {
+    margin-left: auto;
+    margin-right: auto;
+    font: 600 20px "Maven Pro", sans-serif;
+    color: #ffffff;
+}
+
+#pageLogin > #ladoDireito {
+    grid-area: ladoDireito;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoDireito .form_social img {
+    max-width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoDireito #textoBemVindo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    font: 600 25px "Maven Pro", sans-serif;
+    color: #fff;
+}
+
+#pageLogin > #ladoDireito #textoLogin {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font: 600 15px "Maven Pro", sans-serif;
+    color: #fff;
+}
+
+#pageLogin > #ladoDireito #social_login {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoDireito .form a {
+    display: flex;
+    float: right;
+    color: white;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageLogin > #ladoDireito .form input {
+    width: 350px;
+    height: 65px;
+    color: #fff;
+    background-color: transparent;
+    border-style: hidden;
+    border-bottom: solid 1px #fff;
+}
+
+.message {
+    color: red;
+}
+
+#pageLogin > #ladoDireito form #textoEmail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font: 600 10px "Maven Pro", sans-serif;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#pageLogin > #ladoDireito form #textoSenha {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font: 600 10px "Maven Pro", sans-serif;
+    color: #fff;
+}
+
+#pageLogin > #ladoDireito form input:focus {
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+    border-bottom: solid 1px #fff;
+}
+
+#pageLogin > #ladoDireito form input:focus + #textoEmail,
+#pageLogin > #ladoDireito form input:valid + #textoEmail {
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.9s;
+    padding: 0 10px;
+    outline: 0;
+}
+
+#pageLogin > #ladoDireito form input:focus + #textoSenha,
+#pageLogin > #ladoDireito form input:valid + #textoSenha {
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.9s;
+    top: 55%;
+    padding: 0 2%;
+    outline: 0;
+}
+
+#pageLogin > #ladoDireito .separator {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: #fff;
+    margin: 3% 0 3%;
+    display: flex;
+    align-items: center;
+}
+
+#pageLogin > #ladoDireito .separator::before {
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+}
+
+#pageLogin > #ladoDireito .separator::after {
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+}
+
+#pageLogin > #ladoDireito button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 35px;
+    background: #fff;
+    margin-top: 5%;
+    border: transparent;
+    border-radius: 5px;
+    color: #af1212b9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px #000;
+}

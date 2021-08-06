@@ -8,10 +8,12 @@ $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/footer.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/header.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/body.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/dashboard.css");
-$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/home.css");
+$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/login.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/homePage.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/profilePage.css");
-$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/subscribePage.css");
+$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/register.css");
+$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/forget.css");
+$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/reset.css");
 $minCss->minify(dirname(__DIR__, 1) . "/views/assets/style.min.css");
 
 /**
