@@ -86,6 +86,7 @@ class Auth extends Controller
         $user->last_name = $data["last_name"];
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
+        $user->birth_date = $data["birth_date"];
 
         if (!$user->save()) {
             echo $this->ajaxResponse("message", [

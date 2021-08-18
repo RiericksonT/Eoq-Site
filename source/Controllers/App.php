@@ -5,6 +5,7 @@ namespace Source\Controllers;
 
 
 use Source\Models\User;
+use Source\Rss\Rss;
 
 /**
  * Undocumented class
@@ -28,6 +29,7 @@ class App extends Controller
 
             flash("error", "Acesso negado. Por favor, faça o login!");
             $this->router->redirect("web.login");
+            return;
         }
     }
 
@@ -45,9 +47,12 @@ class App extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
+        $posts = Rss::getPost();
+
         echo $this->view->render("theme/dashboard", [
             "head" => $head,
-            "user" => $this->user
+            "user" => $this->user,
+            "posts" => $posts
         ]);
     }
 

@@ -14,7 +14,6 @@
             "profile feed relations";
     }
     #page > #profile {
-        display: grid;
         padding: 16px;
         border-radius: 8px;
         grid-area: profile;
@@ -22,12 +21,28 @@
         background-color: #8ca0ff;
     }
 
-    #page > #profile > #photo{
+    #page > #profile > #info {
+        display: grid;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #page > #profile > #photo > img{
+    #page > #profile > #info h3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info > #photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info > #photo > img {
         border-radius: 8px;
     }
 }
@@ -56,7 +71,22 @@
         background-color: #8ca0ff;
     }
 
-    #page > #profile > #photo{
+    #page > #profile > #info {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info h3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #page > #profile > #info > #photo {
         margin-left: auto;
         margin-right: auto;
         display: none;
