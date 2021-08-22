@@ -17,7 +17,17 @@ class User extends DataLayer
      */
     public function __construct()
     {
-        parent::__construct("users", ["first_name", "last_name", "email", "passwd"]);
+        parent::__construct("users", ["first_name", "last_name", "email", "passwd", "birth_date"]);
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
+    public function posts()
+    {
+        return (new Post())->find()->fetch(true);
     }
 
     /**

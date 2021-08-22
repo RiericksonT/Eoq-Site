@@ -1,24 +1,51 @@
 <?php $this->layout("theme/_theme"); ?>
 
 <div id="main">
-    <?php include dirname(__DIR__, 1) . "/components/Header.php"; ?>
+    <?php include dirname(__DIR__, 1) . "/components/header.php"; ?>
     <div id="page">
         <div id="profile">
-            <div id="photo">
-                <?php if ($user->photo) : ?>
-                    <img class="page_user_photo" src="<?= $user->photo; ?>" alt="<?= $user->first_name; ?>" title="<?= $user->first_name; ?>" />
-                <?php endif; ?>
+            <div id="info">
+                <div id="photo">
+                    <?php if ($user->photo) : ?>
+                        <img class="page_user_photo" src="<?= $user->photo; ?>" alt="<?= $user->first_name; ?><?= $user->last_name; ?>" title="<?= $user->first_name; ?><?= $user->last_name; ?>" />
+                    <?php endif; ?>
+                </div>
+                <h3>Olá <?= $user->first_name; ?> <?= $user->last_name; ?>,</h3>
+                <p>Aqui é sua conta no projeto, mas por enquanto a única coisa que você pode fazer é sair dela :P</p>
+                <p><a class="btn btn-green" href="<?= $router->route("app.logout"); ?>" title="Sair agora">SAIR AGORA :)</a></p>
             </div>
-            <h3>Olá <?= $user->first_name; ?> <?= $user->last_name; ?>,</h3>
-            <p>Aqui é sua conta no projeto, mas por enquanto a única coisa que você pode fazer é sair dela :P</p>
-            <p><a class="btn btn-green" href="<?= $router->route("app.logout"); ?>" title="Sair agora">SAIR AGORA :)</a></p>
         </div>
         <div id="feed">
-            <h1>salve</h1>
+            <div class="create">
+                <div class="postAjax">
+                    <?= flash(); ?>
+                </div>
+                <form id="formPost" class="post" action="<?= $router->route("post.create"); ?>" name="post" method="post" enctype="multipart/form-data" data-idUser="<?= $user->id; ?>" autocomplete="off">
+                    <label>
+                        <input type="text" name="title" placeholder="Titulo:" />
+                        <input type="text" name="description" placeholder="Pergunta:" />
+                        <input type="text" name="category" placeholder="Categoria:" />
+                        <button>Postar</button>
+                    </label>
+                </form>
+            </div>
+            <section class="posts">
+                <?php
+                if (!empty($posts)) :
+                    foreach ($posts as $post) :
+                        include dirname(__DIR__, 1) . "/components/posts.php";
+                    endforeach;
+                endif;
+                ?>
+            </section>
         </div>
         <div id="relations">
             <h1>salve</h1>
         </div>
     </div>
-    <?php include dirname(__DIR__, 1) . "/components/Footer.php"; ?>
+    <?php include dirname(__DIR__, 1) . "/components/footer.php"; ?>
 </div>
+
+<?php $this->start("script"); ?>
+<script src="<?= asset("js/post.js"); ?>></script>
+<?php $this->end(); ?>

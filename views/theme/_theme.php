@@ -17,7 +17,7 @@
         <?= $this->section("content"); ?>
     </main>
 
-    <script src="<?= asset("/scripts.min.js"); ?>"></script>
+    <script src="<?= asset("scripts.min.js"); ?>"></script>
     <?= $this->section("scripts"); ?>
 </body>
 

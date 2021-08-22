@@ -5,12 +5,11 @@ namespace Source\Controllers;
 
 
 use Source\Models\User;
-use Source\Models\FeedPost;
 
 /**
  * Undocumented class
  */
-class App extends Controller
+class Admin extends Controller
 {
     /** @var User */
     protected $user;
@@ -24,11 +23,11 @@ class App extends Controller
     {
         parent::__construct($router);
 
-        if (empty($_SESSION["user"]) || !$this->user = (new User())->findById($_SESSION["user"])) {
-            unset($_SESSION["user"]);
+        if (empty($_SESSION["admin"]) || !$this->user = (new User())->findById($_SESSION["admin"])) {
+            unset($_SESSION["admin"]);
 
             flash("error", "Acesso negado. Por favor, faça o login!");
-            $this->router->redirect("web.login");
+            $this->router->redirect("webAdmin.login");
         }
     }
 
@@ -42,19 +41,15 @@ class App extends Controller
         $head = $this->seo->optimize(
             "Bem-vindo(a) {$this->user->first_name} | " . site("name"),
             site("desc"),
-            $this->router->route("app.home"),
+            $this->router->route("admin.home"),
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-        $post = (new FeedPost())->find()->fetch(true);
-
-        echo $this->view->render("theme/dashboard", [
+        echo $this->view->render("theme/dashboardAdmin", [
             "head" => $head,
-            "user" => $this->user,
-            "posts" => $post
+            "user" => $this->user
         ]);
     }
-
     /**
      * Undocumented function
      *
@@ -66,6 +61,6 @@ class App extends Controller
         unset($_SESSION["admin"]);
 
         flash("info", "Você se desconectou, volte logo {$this->user->first_name}");
-        $this->router->redirect("web.login");
+        $this->router->redirect("webAdmin.login");
     }
 }

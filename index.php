@@ -44,9 +44,26 @@ $router->get("/google", "Auth:google", "auth.google");
 /**
  * PROFILE
  */
+$router->group(null);
 $router->group("/me");
 $router->get("/", "App:home", "app.home");
 $router->get("/sair", "App:logout", "app.logout");
+//$router->get("/", "Post:home", "post.home");
+$router->post("/create", "Feed:create", "feed.create");
+$router->post("/comment", "Feed:comment", "feed.comment");
+$router->post("/delete", "Feed:delete", "feed.delete");
+
+/**
+ * ADMIN
+ */
+$router->group(null);
+$router->group("/root");
+$router->get("/", "WebAdmin:login", "webAdmin.login");
+$router->post("/login", "Auth:loginAdmin", "auth.loginAdmin");
+$router->group(null);
+$router->group("/admin");
+$router->get("/", "Admin:home", "admin.home");
+$router->get("/sair", "Admin:logout", "admin.logout");
 
 /**
  * ERRORS

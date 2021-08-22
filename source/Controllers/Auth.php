@@ -52,6 +52,8 @@ class Auth extends Controller
                 "message" => "E-mail ou senha inválidos"
             ]);
             return;
+        } elseif ($user->admin == 1) {
+            $_SESSION["admin"] = $user->id;
         }
 
         /** SOCIAL VALIDATE */
@@ -61,6 +63,50 @@ class Auth extends Controller
 
         echo $this->ajaxResponse("redirect", [
             "url" => $this->router->route("app.home")
+        ]);
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param array $data
+     * @return void
+     */
+    public function loginAdmin(array $data): void
+    {
+        $email = filter_var($data["email"], FILTER_VALIDATE_EMAIL);
+        $passwd = filter_var($data["passwd"], FILTER_DEFAULT);
+
+        if (!$email || !$passwd) {
+            echo $this->ajaxResponse("message", [
+                "type" => "alert",
+                "message" => "Informe seu e-mail e senha para conectar"
+            ]);
+            return;
+        }
+
+        $user = (new User())->find("email = :e", "e={$email}")->fetch();
+        if (!$user || !password_verify($passwd, $user->passwd)) {
+            echo $this->ajaxResponse("message", [
+                "type" => "alert",
+                "message" => "E-mail ou senha inválidos"
+            ]);
+            return;
+        }
+
+        if ($user->admin != 1) {
+            echo $this->ajaxResponse("message", [
+                "type" => "alert",
+                "message" => "Você não tem permição de administrador"
+            ]);
+            return;
+        }
+
+        $_SESSION["user"] = $user->id;
+        $_SESSION["admin"] = $user->id;
+
+        echo $this->ajaxResponse("redirect", [
+            "url" => $this->router->route("admin.home")
         ]);
     }
 
@@ -86,6 +132,7 @@ class Auth extends Controller
         $user->last_name = $data["last_name"];
         $user->email = $data["email"];
         $user->passwd = $data["passwd"];
+        $user->birth_date = $data["birth_date"];
 
         if (!$user->save()) {
             echo $this->ajaxResponse("message", [
