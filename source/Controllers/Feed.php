@@ -2,6 +2,7 @@
 
 namespace Source\Controllers;
 
+use Source\Models\CommentPost;
 use Source\Models\Post;
 
 /**
@@ -41,19 +42,39 @@ class Feed extends Controller
     {
         $postData = filter_var_array($data, FILTER_SANITIZE_STRING);
         if (in_array("", $postData)) {
-            $callback["message"] = "message"("todos os campos são obrigatorios!", "error");
-            echo json_encode($callback);
             return;
         }
         $post = new Post();
-        $post->id_users = $postData["id_users"];
+        $post->id_users = filter_var($postData["id_user"], FILTER_SANITIZE_NUMBER_INT);
         $post->title = $postData["title"];
         $post->description = $postData["description"];
         $post->category = $postData["category"];
         $post->save();
 
-        $callback["message"] = "message"("todos os campos são obrigatorios!", "error");
-        $callback["post"] = $this->view->render(dirname(__DIR__, 2) . "/views/components/post", ["post" => $post]);
+        echo [
+            "posts" => $post
+        ];
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param array $data
+     * @return void
+     */
+    public function comment(array $data): void
+    {
+        $postData = filter_var_array($data, FILTER_SANITIZE_STRING);
+        if (in_array("", $postData)) {
+            return;
+        }
+        $comment = new CommentPost();
+        $comment->id_users = $postData["id_user"];
+        $comment->id_post = $postData["id_post"];
+        $comment->comment = $postData["message"];
+        $comment->save();
+
+        $callback["comment"] = $this->view->render(dirname(__DIR__, 2) . "/views/theme/dashboard.php", ["comment" => $comment]);
         echo json_encode($callback);
     }
 

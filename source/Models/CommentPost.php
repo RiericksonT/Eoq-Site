@@ -35,4 +35,18 @@ class CommentPost extends DataLayer
 
         return $this;
     }
+
+    /**
+     * Undocumented function
+     *
+     * @return boolean
+     */
+    public function save(): bool
+    {
+        if (!parent::save()) {
+            return false;
+        }
+
+        return true;
+    }
 }

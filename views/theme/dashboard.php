@@ -17,11 +17,11 @@
         </div>
         <div id="feed">
             <div class="create">
-                <div class="postAjax">
-                    <?= flash(); ?>
+                <div id="post--Ajax" style="display: none;">
                 </div>
-                <form id="formPost" class="post" action="<?= $router->route("post.create"); ?>" name="post" method="post" enctype="multipart/form-data" data-idUser="<?= $user->id; ?>" autocomplete="off">
+                <form id="formPost" class="post" action="<?= $router->route("feed.create"); ?>" name="post" method="post" enctype="multipart/form-data" autocomplete="off">
                     <label>
+                        <input type="hidden" name="id_user" value="<?= $user->id; ?>">
                         <input type="text" name="title" placeholder="Titulo:" />
                         <input type="text" name="description" placeholder="Pergunta:" />
                         <input type="text" name="category" placeholder="Categoria:" />
@@ -46,6 +46,6 @@
     <?php include dirname(__DIR__, 1) . "/components/footer.php"; ?>
 </div>
 
-<?php $this->start("script"); ?>
-<script src="<?= asset("js/post.js"); ?>></script>
+<?php $this->start("scripts"); ?>
+<script src="<?= asset("js/form.js"); ?>"></script>
 <?php $this->end(); ?>
