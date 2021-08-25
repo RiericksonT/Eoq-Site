@@ -3,6 +3,7 @@
 namespace Source\Controllers;
 
 use Source\Models\CommentPost;
+use Source\Models\FeedPost;
 use Source\Models\Post;
 
 /**
@@ -51,9 +52,12 @@ class Feed extends Controller
         $post->category = $postData["category"];
         $post->save();
 
-        echo [
-            "posts" => $post
-        ];
+        $teste = json_encode((new FeedPost())->find()->group("id")->fetch(true));
+
+        echo $this->view->render("components/posts", [
+            "message" => "error",
+            "posts" => $teste
+        ]);;
     }
 
     /**

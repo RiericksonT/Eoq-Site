@@ -5,6 +5,7 @@ namespace Source\Controllers;
 
 
 use Source\Models\User;
+use Source\Models\FeedPostReport;
 
 /**
  * Undocumented class
@@ -45,9 +46,12 @@ class Admin extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
+        $post = (new FeedPostReport())->find()->group("id")->fetch(true);
+
         echo $this->view->render("theme/dashboardAdmin", [
             "head" => $head,
-            "user" => $this->user
+            "user" => $this->user,
+            "posts" => $post
         ]);
     }
     /**

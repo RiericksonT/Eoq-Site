@@ -4,21 +4,36 @@
     <?php include dirname(__DIR__, 1) . "/components/header.php"; ?>
     <div id="page">
         <div id="profile">
-            <div id="photo">
-                <?php if ($user->photo) : ?>
-                    <img class="page_user_photo" src="<?= $user->photo; ?>" alt="<?= $user->first_name; ?><?= $user->last_name; ?>" title="<?= $user->first_name; ?><?= $user->last_name; ?>" />
-                <?php endif; ?>
+            <div id="info">
+                <div id="photo">
+                    <?php if ($user->photo) : ?>
+                        <img class="page_user_photo" src="<?= $user->photo; ?>" alt="<?= $user->first_name; ?><?= $user->last_name; ?>" title="<?= $user->first_name; ?><?= $user->last_name; ?>" />
+                    <?php endif; ?>
+                </div>
+                <h3>Olá <?= $user->first_name; ?> <?= $user->last_name; ?>,</h3>
+                <p>Admin <?= $_SESSION['admin']; ?><br />Aqui é sua conta no projeto :P</p><br />
+                <p><i class="fas fa-angle-double-right"></i> Em desenvolvimento <i class="fas fa-angle-double-left"></i></p><br />
+                <p><a class="btn btn-green" href="<?= $router->route("app.logout"); ?>" title="Sair agora">SAIR AGORA :)</a></p>
             </div>
-            <h3>Olá <?= $user->first_name; ?> <?= $user->last_name; ?>,</h3>
-            <p>Aqui é sua conta no projeto, mas por enquanto a única coisa que você pode fazer é sair dela :P</p>
-            <p><a class="btn btn-green" href="<?= $router->route("admin.logout"); ?>" title="Sair agora">SAIR AGORA :)</a></p>
         </div>
         <div id="feed">
-            <h1>Admin <?= $_SESSION['admin']; ?></h1>
+            <div class="posts">
+                <?php
+                if (!empty($posts)) :
+                    foreach ($posts as $post) :
+                        include dirname(__DIR__, 1) . "/components/postsAdm.php";
+                    endforeach;
+                endif;
+                ?>
+            </div>
         </div>
         <div id="relations">
-            <h1>salve</h1>
+            <p> <i class="fas fa-angle-double-right"></i> Em desenvolvimento <i class="fas fa-angle-double-left"></i></p>
         </div>
     </div>
     <?php include dirname(__DIR__, 1) . "/components/footer.php"; ?>
 </div>
+
+<?php $this->start("scripts"); ?>
+<script src="<?= asset("js/form.js"); ?>"></script>
+<?php $this->end(); ?>

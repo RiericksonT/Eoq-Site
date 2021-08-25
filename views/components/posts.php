@@ -1,4 +1,4 @@
-<article class="feedPost">
+<div class="feedPost">
 
     <div class="cardHeader">
         <img class="postUsericon" src="<?= $post->photo; ?>" alt="<?= $post->first_name; ?><?= $post->last_name; ?>">
@@ -24,16 +24,15 @@
                 endforeach;
             endif;
             ?>
+            <div id="commentAjax" style="display: none;"> </div>
             <form id="formComment" class="post" action="<?= $router->route("feed.comment"); ?>" name="post" method="post" enctype="multipart/form-data" autocomplete="off">
                 <div class="">
                     <input type="hidden" name="id_user" value="<?= $user->id; ?>">
                     <input type="hidden" name="id_post" value="<?= $post->id; ?>">
                     <input name="message" type="text" class="messageComment" placeholder="Digite sua mensagem">
-                </div>
-                <div class="">
                     <button class="submitComment"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
         </div>
     </div>
-</article>
+</div>

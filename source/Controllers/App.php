@@ -46,7 +46,7 @@ class App extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-        $post = (new FeedPost())->find()->fetch(true);
+        $post = (new FeedPost())->find()->group("id")->fetch(true);
 
         echo $this->view->render("theme/dashboard", [
             "head" => $head,

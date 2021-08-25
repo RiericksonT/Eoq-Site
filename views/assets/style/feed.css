@@ -1,0 +1,82 @@
+.create{
+    margin-top: 10px;
+}
+.create button{
+    color: #ffffff;
+}
+/* Post */
+.feedPost .cardHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.feedPost .cardHeader {
+    background-color: rgb(52, 27, 63);
+    border: 1px solid rgb(97, 49, 99);
+    color: #ffffff;
+}
+.feedPost .cardReport{
+    margin-top: 10px;
+    background-color: rgb(52, 27, 63);
+    border: 1px solid rgb(97, 49, 99);
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+.feedPost .cardHeader span {
+    padding-left: 10px;
+    font-weight: 600;
+}
+.feedPost .cardFooter{
+    margin-bottom: 10px;
+}
+.feedPost .cardBody {
+    font-size: 1.5rem;
+}
+.feedPost .cardFooter, .feedPost .cardBody {
+    background-color: rgb(52, 27, 63);
+    border: 1px solid rgb(97, 49, 99);
+    color: #ffffff;
+}
+.postUsericon {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Post - action buttons */
+.feedPost .actionButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.feedPost .actionButtons .item {
+    font-weight: 400;
+    font-size: 18pt;
+}
+.feedPost .actionButtons .item + .item {
+    padding-left: 15px;
+}
+.postComments .comment .user {
+    font-weight: 600;
+    padding-right: 3px;
+}
+.postComments .comment .text {
+    font-weight: 500;
+}
+
+
+.profileLink{
+    text-decoration: none!important;
+}
+.borderRound {
+    border-radius: 50%;
+}
+.submitComment {
+    background: transparent;
+    border: transparent;
+}
+.submitComment i {
+    color: #ffffff;
+}
+

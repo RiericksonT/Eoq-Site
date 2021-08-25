@@ -11,14 +11,14 @@
                     <?php endif; ?>
                 </div>
                 <h3>Olá <?= $user->first_name; ?> <?= $user->last_name; ?>,</h3>
-                <p>Aqui é sua conta no projeto, mas por enquanto a única coisa que você pode fazer é sair dela :P</p>
+                <p>Aqui é sua conta no projeto :P</p><br />
+                <p><i class="fas fa-angle-double-right"></i> Em desenvolvimento <i class="fas fa-angle-double-left"></i></p><br />
                 <p><a class="btn btn-green" href="<?= $router->route("app.logout"); ?>" title="Sair agora">SAIR AGORA :)</a></p>
             </div>
         </div>
         <div id="feed">
             <div class="create">
-                <div id="post--Ajax" style="display: none;">
-                </div>
+                <div id="postAjax" style="display: none;"> </div>
                 <form id="formPost" class="post" action="<?= $router->route("feed.create"); ?>" name="post" method="post" enctype="multipart/form-data" autocomplete="off">
                     <label>
                         <input type="hidden" name="id_user" value="<?= $user->id; ?>">
@@ -29,7 +29,7 @@
                     </label>
                 </form>
             </div>
-            <section class="posts">
+            <div class="posts">
                 <?php
                 if (!empty($posts)) :
                     foreach ($posts as $post) :
@@ -37,10 +37,10 @@
                     endforeach;
                 endif;
                 ?>
-            </section>
+            </div>
         </div>
         <div id="relations">
-            <h1>salve</h1>
+            <p> <i class="fas fa-angle-double-right"></i> Em desenvolvimento <i class="fas fa-angle-double-left"></i></p>
         </div>
     </div>
     <?php include dirname(__DIR__, 1) . "/components/footer.php"; ?>
