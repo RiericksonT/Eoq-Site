@@ -15,14 +15,13 @@
     }
     #page > #profile {
         padding: 16px;
-        border-radius: 8px;
         grid-area: profile;
         height: 100%;
-        background-color: #8ca0ff;
     }
 
     #page > #profile > #info {
         display: grid;
+<<<<<<< HEAD
         margin-left: auto;
         margin-right: auto;
     }
@@ -38,10 +37,33 @@
     }
 
     #page > #profile > #info > #photo {
+=======
+>>>>>>> teste
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffffc4;
+        border-radius: 8px;
+    }
+
+<<<<<<< HEAD
+=======
+    #page > #profile > #info h3{
         margin-left: auto;
         margin-right: auto;
     }
 
+    #page > #profile > #info p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #page > #profile > #info > #photo {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+>>>>>>> teste
     #page > #profile > #info > #photo > img {
         border-radius: 8px;
     }
@@ -65,16 +87,19 @@
     #page > #profile {
         display: grid;
         padding: 16px;
-        border-radius: 8px;
         grid-area: profile;
         height: 100%;
-        background-color: #8ca0ff;
     }
 
     #page > #profile > #info {
         display: grid;
         margin-left: auto;
         margin-right: auto;
+<<<<<<< HEAD
+=======
+        background-color: #ffffffc4;
+        border-radius: 8px;
+>>>>>>> teste
     }
 
     #page > #profile > #info h3{
@@ -96,11 +121,15 @@
 #page > #feed {
     border-radius: 8px;
     grid-area: feed;
-    background-color: #ffa08c;
+    background-color: #68466bc4;
 }
 
 #page > #relations {
     border-radius: 8px;
     grid-area: relations;
-    background-color: #ffff64;
+}
+
+#page > #relations p{
+    border-radius: 8px;
+    background-color: #ffffffc4;
 }

@@ -50,6 +50,24 @@ class Web extends Controller
      *
      * @return void
      */
+    public function loginAdmin(): void
+    {
+        $head = $this->seo->optimize(
+            "Faça login para continuar | " . site("name"),
+            site("desc"),
+            $this->router->route("web.loginAdmin"),
+            routeImage("loginAdmin")
+        )->render();
+        echo $this->view->render("theme/loginAdmin", [
+            "head" => $head
+        ]);
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
     public function register(): void
     {
         $head = $this->seo->optimize(

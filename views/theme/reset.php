@@ -1,7 +1,7 @@
 <?php $this->layout("theme/_theme"); ?>
 
 <div class="main_content_box">
-    <?php include dirname(__DIR__, 1) . "/components/Header.php"; ?>
+    <?php include dirname(__DIR__, 1) . "/components/header.php"; ?>
     <div id="resetMain">
         <div id="ladoEsquerdoReset">
             <img src="<?= imagePath("background.png") ?>" alt="Logo" />
@@ -23,9 +23,9 @@
             </form>
         </div>
     </div>
-    <?php include dirname(__DIR__, 1) . "/components/Footer.php"; ?>
+    <?php include dirname(__DIR__, 1) . "/components/footer.php"; ?>
 </div>
 
 <?php $this->start("scripts"); ?>
-<script src="<?= asset("/js/form.js"); ?>"></script>
+<script src="<?= asset("js/form.js"); ?>"></script>
 <?php $this->end(); ?>

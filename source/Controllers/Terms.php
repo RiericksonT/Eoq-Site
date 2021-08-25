@@ -37,6 +37,11 @@ class Terms extends Controller
         ]);
     }
 
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
     public function privacy(): void
     {
         $head = $this->seo->optimize(

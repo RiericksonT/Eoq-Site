@@ -17,16 +17,7 @@
                 <img src="<?= imagePath("logoIcon.ico") ?>" alt="Logo" />
                 Welcome!
             </p>
-            <p id="textoLogin">Faca seu login com:</p>
-            <div id="social_login" class="form_social">
-                <button onclick="location.href='<?= $router->route('auth.facebook'); ?>'" class="btn-facebook"><img src="<?= imagePath("facebookLogo.png") ?>" alt=""></button>
-                <button onclick="location.href='<?= $router->route('auth.google'); ?>'" class="btn-google"><img src="<?= imagePath("googleLogo.png") ?>" alt=""></button>
-            </div>
-            <div class="separator">
-                <hr class="divisor" />
-                <p>OU</p>
-            </div>
-            <form class="form" action="<?= $router->route("auth.login"); ?>" method="post" autocomplete="off">
+            <form class="form" action="<?= $router->route("auth.loginAdmin"); ?>" method="post" autocomplete="off">
 
                 <div class="login_form_callback">
                     <?= flash(); ?>
@@ -37,14 +28,8 @@
                 <input autocomplete="" type="password" name="passwd" placeholder="Informe sua senha:" />
                 <p id="textoSenha">senha</p>
                 <button type="submit"> Login </button>
-                <a id="forget" href="<?= $router->route("web.forget"); ?>" title="Recuperar Senha">Recuperar Senha</a>
 
             </form>
-            <div class="separator">
-                <hr class="divisor" />
-                <p>Nao tem login? inscreva-se agora!</p>
-            </div>
-            <button onclick="location.href='<?= $router->route('web.register'); ?>'"> Inscreva-se </button>
         </div>
     </div>
 </div>
