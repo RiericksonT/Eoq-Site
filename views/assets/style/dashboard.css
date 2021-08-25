@@ -21,32 +21,12 @@
 
     #page > #profile > #info {
         display: grid;
-<<<<<<< HEAD
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #page > #profile > #info h3{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #page > #profile > #info p{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #page > #profile > #info > #photo {
-=======
->>>>>>> teste
         margin-left: auto;
         margin-right: auto;
         background-color: #ffffffc4;
         border-radius: 8px;
     }
 
-<<<<<<< HEAD
-=======
     #page > #profile > #info h3{
         margin-left: auto;
         margin-right: auto;
@@ -63,7 +43,6 @@
         margin-right: auto;
     }
 
->>>>>>> teste
     #page > #profile > #info > #photo > img {
         border-radius: 8px;
     }
@@ -95,11 +74,8 @@
         display: grid;
         margin-left: auto;
         margin-right: auto;
-<<<<<<< HEAD
-=======
         background-color: #ffffffc4;
         border-radius: 8px;
->>>>>>> teste
     }
 
     #page > #profile > #info h3{

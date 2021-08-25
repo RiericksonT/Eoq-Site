@@ -5,11 +5,7 @@ namespace Source\Controllers;
 
 
 use Source\Models\User;
-<<<<<<< HEAD
-use Source\Rss\Rss;
-=======
 use Source\Models\FeedPost;
->>>>>>> teste
 
 /**
  * Undocumented class
@@ -33,7 +29,6 @@ class App extends Controller
 
             flash("error", "Acesso negado. Por favor, faça o login!");
             $this->router->redirect("web.login");
-            return;
         }
     }
 
@@ -51,20 +46,12 @@ class App extends Controller
             routeImage("Conta de {$this->user->first_name}")
         )->render();
 
-<<<<<<< HEAD
-        $posts = Rss::getPost();
-=======
         $post = (new FeedPost())->find()->group("id")->fetch(true);
->>>>>>> teste
 
         echo $this->view->render("theme/dashboard", [
             "head" => $head,
             "user" => $this->user,
-<<<<<<< HEAD
-            "posts" => $posts
-=======
             "posts" => $post
->>>>>>> teste
         ]);
     }
 

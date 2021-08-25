@@ -9,7 +9,6 @@ $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/header.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/body.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/feed.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/dashboard.css");
-$minCss->add(dirname(__DIR__, 1) . "/views/assets/style/post.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/login.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/homePage.css");
 $minCss->add(dirname(__DIR__, 1) . "/views/assets/style/profilePage.css");
