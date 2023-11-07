@@ -1,0 +1,28 @@
+@import '/src/styles/variables.scss';
+
+.buttonLogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 10rem;
+    height: 2.5rem;
+
+    background-color: white;
+
+    text-decoration: none;
+
+    color: $backgroud2;
+
+    border-radius: 0.2rem;
+
+    p{
+        margin-left: 0.5rem;
+    }
+
+    &:hover{
+        background-color: orangered;
+        color: white;
+    }
+}

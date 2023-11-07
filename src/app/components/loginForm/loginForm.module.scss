@@ -1,0 +1,104 @@
+@import '../../../styles/variables.scss';
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 10px;
+    
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+
+    .label{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .input{
+        
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        outline: none;
+        font-size: 0.9rem;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 2%;
+
+        &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px $backgroud2 inset !important;
+            -webkit-text-fill-color: #fff !important;
+        }
+
+
+        &:focus{
+            border-color: orangered;
+            color: orangered;
+            
+        }
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+        width: 10rem;
+        height: 2.5rem;
+
+        background-color: white;
+
+        text-decoration: none;
+
+        color: $backgroud2;
+
+        border-radius: 0.2rem;
+
+        p{
+            margin-left: 0.5rem;
+        }
+
+        &:hover{
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    p{
+        font-size: 0.8rem;
+        color: rgb(89, 225, 255);
+    }
+
+    .link{
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        &:hover{
+            color: orangered;
+        }
+    }
+
+    
+}
