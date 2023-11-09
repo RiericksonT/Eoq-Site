@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 7%;
+    margin-bottom: 5%;
+    
+    width: 10rem;
+    height: 2.5rem;
+
+    background-color: white;
+
+    text-decoration: none;
+
+    color: $backgroud2;
+
+    border-radius: 0.2rem;
+
+    p{
+        margin-left: 0.5rem;
+    }
+
+    &:hover{
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+}

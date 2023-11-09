@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styles from "./buttonLogin.module.scss";
 import Image from "next/image";
+import { signIn, useSession } from "next-auth/react";
+import router from "next/router";
 
 interface ButtonLoginProps {
   src: string;
@@ -17,16 +19,29 @@ export default function ButtonLogin({
   height,
   text,
 }: ButtonLoginProps) {
+  const { data: session } = useSession();
+
+  if (session && session.user) {
+    router.push("/home");
+  }
+
   return (
-    <Link href="/login" className={styles.buttonLogin}>
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={styles.icon}
-      />
-      <p>{text}</p>
-    </Link>
+    <>
+      <button
+        className={styles.buttonLogin}
+        onClick={() => {
+          signIn();
+        }}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className={styles.icon}
+        />
+        <p>{text}</p>
+      </button>
+    </>
   );
 }

@@ -1,0 +1,81 @@
+@import '../../../styles/variables.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
+    height: 25vh;
+
+    background-color: $backgroud;
+
+    border-bottom: 1px solid white;
+
+    padding: 2%;
+
+    .containerInput{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 80%;
+        height: 80%;
+
+        margin-bottom: 5%;
+
+        border: 1px solid white;
+        border-radius: 5px;
+
+        padding: 0 10px;
+
+        .input{
+            align-self: center;
+
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+
+            font-size: 1rem;
+            background-color: transparent;
+
+            color: white;
+            
+        }
+    }
+    
+    .containerFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            width: 5rem;
+            height: 2rem;
+
+            background-color: white;
+
+            text-decoration: none;
+
+            color: $backgroud2;
+
+            border-radius: 0.2rem;
+
+            p{
+                margin-left: 0.5rem;
+            }
+
+            &:hover{
+                background-color: orangered;
+                color: white;
+            }
+        }
+    }
+}

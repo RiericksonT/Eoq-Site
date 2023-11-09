@@ -1,0 +1,56 @@
+@import '../../../styles/variables.scss';
+
+.cardProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 50%;
+    height: 50%;
+
+    background-color: $backgroud2;
+    border-radius: 10px;
+
+    margin-right: 5%;
+
+    .cardProfileHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        .cardProfileHeaderAvatar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 45%;
+            height: 100%;
+
+            margin-bottom: 10%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .cardProfileHeaderInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            color: aliceblue;
+        }
+    }
+    .cardProfileContent{
+        color: aliceblue;
+        margin: 5%;
+        padding: 5%;
+    }
+}
